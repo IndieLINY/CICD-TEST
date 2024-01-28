@@ -9,6 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - run: & "C:\Program Files\PowerShell\7\pwsh.exe"
       - run: F:\__INDIELINY__\CI\BuildRun.ps1
 
     #  - uses: actions/upload-artifact@v3

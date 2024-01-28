@@ -1,0 +1,17 @@
+name: 'Unity Build'
+
+on: [push]
+
+jobs:
+  build:
+    name: build project
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: F:\__INDIELINY\CI\BuildRun.ps1
+
+    #  - uses: actions/upload-artifact@v3
+      #  with:
+        #  name: Build
+          #path: build

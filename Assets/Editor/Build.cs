@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEditor.Build;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
@@ -12,13 +13,19 @@ public class Build : IPostprocessBuildWithReport
     {
         if (report.summary.result == BuildResult.Succeeded)
         {
-            Debug.Log("S");
-            Environment.Exit(0);
+            Task.Run(async () =>
+            {
+                await Task.Delay(60000);
+                Environment.Exit(0);
+            });
         }
         else
         {
-            Debug.Log("F");
-            Environment.Exit(1);
+            Task.Run(async () =>
+            {
+                await Task.Delay(60000);
+                Environment.Exit(1);
+            });
         }
     }
 

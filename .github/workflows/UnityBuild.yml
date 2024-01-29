@@ -12,7 +12,7 @@ jobs:
       - run: '& "C:\Program Files\PowerShell\7\pwsh.exe"'
       - run: F:\__INDIELINY__\CI\BuildRun.ps1
 
-    #  - uses: actions/upload-artifact@v3
-      #  with:
-        #  name: Build
-          #path: build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Build
+          path: .

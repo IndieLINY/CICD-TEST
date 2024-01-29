@@ -15,4 +15,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Build
-          path:  C:\__INDIELINY__\CI\__BUILD_OUTPUT__
+          path:  C:\__INDIELINY__\ci\__BUILD_OUTPUT__

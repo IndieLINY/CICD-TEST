@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     name: build project
-    runs-on: ["self-hosted", "docker"]
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v3
